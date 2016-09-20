@@ -5,61 +5,63 @@ import lejos.util.Delay;
 
 public class Robot {
 
-	private int black;
-	private int white;
 	private LightSensor lightSensorLeft;
 	private LightSensor lightSensorRight;
-	
+	private long straightCounter = 0;
+
 	public void followLine() {
 		lightSensorLeft = new LightSensor(SensorPort.S4);
 		lightSensorRight = new LightSensor(SensorPort.S1);
-		
-		white = lightSensorLeft.readValue();
-		black = lightSensorLeft.readValue();
-		
+
 		Motor.C.forward();
 		Motor.B.forward();
-		
-		while(true) {
-			
-			updateBlackWhite();
-			
+
+		int oldDiff = 0;
+		int speed = 100;
+		int addSpeed = 0;
+
+		while (true) {
+
 			int sensorLeft = lightSensorLeft.readValue();
 			int sensorRight = lightSensorRight.readValue();
-			
+
 			int diff = sensorLeft - sensorRight;
-			
-			if(Math.abs(diff) < 3) {
-				diff = 0;
+
+//			if (Math.abs(diff) > 7) {
+//				addSpeed = -9 * Math.abs(diff);
+//			}
+
+//			addSpeed = -8 * Math.abs(diff);
+
+			if (Math.abs(diff) < 2 && addSpeed < 150) {
+				addSpeed += 10;
+			}
+			if (Math.abs(diff) > 5 && addSpeed > -35) {
+				addSpeed -= 20;
 			}
 			
-			int speed = 250;
-			diff *= Math.abs(diff) * speed / 270;
-			//diff *= 250 / 30;
-			
-			int motorLeft = speed + diff;
-			int motorRight = speed - diff;
-			
+			diff *= 4;
+			diff += 0.7 * oldDiff;
+
+			int motorLeft = speed + addSpeed + diff;
+			int motorRight = speed + addSpeed - diff;
+
+			if (motorLeft < 0) {
+				Motor.C.backward();
+			} else {
+				Motor.C.forward();
+			}
 			Motor.C.setSpeed(motorLeft);
+
+			if (motorRight < 0) {
+				Motor.B.backward();
+			} else {
+				Motor.B.forward();
+			}
 			Motor.B.setSpeed(motorRight);
-			
-			Delay.msDelay(50);
-		}
-	}
-	
-	public void updateBlackWhite() {
-		if(lightSensorLeft.readValue() > white) {
-			white = lightSensorLeft.readValue();
-		}
-		if(lightSensorLeft.readValue() < black) {
-			black = lightSensorLeft.readValue();
-		}
-		
-		if(lightSensorRight.readValue() > white) {
-			white = lightSensorRight.readValue();
-		}
-		if(lightSensorRight.readValue() < black) {
-			black = lightSensorRight.readValue();
+
+			Delay.msDelay(20);
+			oldDiff = diff;
 		}
 	}
 
