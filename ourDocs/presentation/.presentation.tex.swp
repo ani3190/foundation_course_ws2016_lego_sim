@@ -1,0 +1,40 @@
+\documentclass{beamer}
+\usetheme{metropolis}
+\title{LEGO Mindstorms Line Following Project}
+\author{Aniruddha Pal, Markus Wiktorin}
+\date{23rd of September 2016}
+\institute{University of Applied Science, Bonn-Rhein-Sieg}
+\begin{document}
+	\maketitle
+	\begin{frame}
+		\frametitle{Task}
+		Program a LEGO robot which can follow a line.
+		\\
+		Light conditions and track can change, the robot should work under different conditions.
+	\end{frame}
+	\begin{frame}
+		\frametitle{Approaches}
+		\begin{enumerate}
+			\item One light sensor in front of the robot
+			\item Two light sensors in front of the robot
+			\item Two light sensors in front of the robot using PID
+			\item Two light sensors, ultrasonic sensor and touch sensor in front of the robot using PID
+		\end{enumerate}
+	\end{frame}
+	\begin{frame}
+		\frametitle{1. Approach (one light sensor)}
+		
+	\end{frame}
+	\begin{frame}
+		\frametitle{2. Approach (two light sensors)}
+		
+	\end{frame}
+	\begin{frame}
+		\frametitle{3. Approach (two light sensors + PID)}
+		
+	\end{frame}
+	\begin{frame}
+		\frametitle{4. Approach (two light, ultrasonic, touch sensor + PID)}
+		
+	\end{frame}
+\end{document}
