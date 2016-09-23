@@ -33,13 +33,13 @@
 		\frametitle{2. Approach (two light sensors)}
 		\begin{itemize}
 			\item We used two light sensors attached infront of the robot side  by side.
-			\item The robot calculates the vakue difference of valus between the sensors.
-			\item It takes left or right turn based on the difference of the two sensors.Also adjusts speed to take sharper turns.
+			\item The robot calculates the difference of the values between the sensors.
+			\item It takes left or right turn based on the difference of the two sensors. It also adjusts speed to take sharper turns.
 			\item Advantage:
 			\begin{itemize}
-				\item Works better than the one sensor approach.
+				\item Works better than the one sensor approach
 				\item Can take sharp turns
-				\item Faster.
+				\item Faster
 			\end{itemize}
 			\item Disadvantage:
 			\begin{itemize}
@@ -52,8 +52,8 @@
 		\frametitle{3. Approach (two light sensors + PID)}
 		\begin{itemize}
 			\item Same two sensor approach as the last one.
-			\item Calculates the difference between the two motors which works as error value for proportional controller.
-			\item Uses the previous error for better contol of movement. Integral approach.
+			\item Calculates the difference between the two sensors which works as error value for proportional controller.
+			\item Uses the previous error for better contol of movement. (Integral approach)
 			\item Appropiate values of Proportional, Integral and Differencial co-efficients used.
 			\item Advantage:
 			\begin{itemize}
@@ -62,7 +62,7 @@
 			\end{itemize}
 			\item Disadvantage:
 			\begin{itemize}
-				\item Finding out appropiate co-efficient values.
+				\item Finding out appropriate co-efficient values.
 			\end{itemize}
 		\end{itemize} 
 	\end{frame}
