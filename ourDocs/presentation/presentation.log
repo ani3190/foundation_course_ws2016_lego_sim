@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.9.10)  22 SEP 2016 21:19
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.9.9)  23 SEP 2016 12:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -957,15 +957,43 @@ LaTeX Font Warning: Font shape `OT1/cmss/m/n' in size <4> not available
 
 ] [3
 
-] [4
+] <firstApproach.png, id=31, 1084.05pt x 437.635pt>
+File: firstApproach.png Graphic file (type png)
 
-] [5
+<use firstApproach.png>
+Package pdftex.def Info: firstApproach.png used on input line 31.
+(pdftex.def)             Requested size: 307.28679pt x 124.05281pt.
+ [4
+
+ <./firstApproach.png (PNG copy)>]
+LaTeX Font Info:    Try loading font information for OMS+cmss on input line 50.
+
+LaTeX Font Info:    No file OMScmss.fd. on input line 50.
+
+
+LaTeX Font Warning: Font shape `OMS/cmss/m/n' undefined
+(Font)              using `OMS/cmsy/m/n' instead
+(Font)              for symbol `textbullet' on input line 50.
+
+[5
 
 ] [6
 
 ] [7
 
-]
+] <IMG_20160922_170936.jpg, id=54, 3276.24pt x 2457.18pt>
+File: IMG_20160922_170936.jpg Graphic file (type jpg)
+
+<use IMG_20160922_170936.jpg>
+Package pdftex.def Info: IMG_20160922_170936.jpg used on input line 85.
+(pdftex.def)             Requested size: 307.24673pt x 230.43504pt.
+
+Overfull \vbox (18.68913pt too high) detected at line 85
+ []
+
+[8
+
+ <./IMG_20160922_170936.jpg>]
 \tf@nav=\write6
 \openout6 = `presentation.nav'.
 
@@ -975,11 +1003,11 @@ LaTeX Font Warning: Font shape `OT1/cmss/m/n' in size <4> not available
 \tf@snm=\write8
 \openout8 = `presentation.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 40.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 40.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 86.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 86.
  (./presentation.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 40.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 40.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 86.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 86.
 Package rerunfilecheck Info: File `presentation.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 
@@ -987,23 +1015,27 @@ Package rerunfilecheck Info: File `presentation.out' has not changed.
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 40.
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 86.
  ) 
 Here is how much of TeX's memory you used:
- 18311 strings out of 494985
- 346965 string characters out of 6180356
- 419990 words of memory out of 5000000
- 21096 multiletter control sequences out of 15000+600000
- 6652 words of font info for 24 fonts, out of 8000000 for 9000
+ 18379 strings out of 494985
+ 348485 string characters out of 6180357
+ 423990 words of memory out of 5000000
+ 21156 multiletter control sequences out of 15000+600000
+ 6909 words of font info for 25 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 61i,13n,79p,1734b,538s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 61i,13n,88p,1734b,538s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/share
-/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb>
-Output written on presentation.pdf (7 pages, 40404 bytes).
+/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/share/tex
+live/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+Output written on presentation.pdf (8 pages, 1235829 bytes).
 PDF statistics:
- 69 PDF objects out of 1000 (max. 8388607)
- 50 compressed objects within 1 object stream
- 14 named destinations out of 1000 (max. 500000)
- 43 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 80 PDF objects out of 1000 (max. 8388607)
+ 57 compressed objects within 1 object stream
+ 16 named destinations out of 1000 (max. 500000)
+ 53 words of extra memory for PDF output out of 10000 (max. 10000000)
 

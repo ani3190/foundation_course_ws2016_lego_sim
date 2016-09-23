@@ -31,11 +31,40 @@
 	\end{frame}
 	\begin{frame}
 		\frametitle{2. Approach (two light sensors)}
-		
+		\begin{itemize}
+			\item We used two light sensors attached infront of the robot side  by side.
+			\item The robot calculates the vakue difference of valus between the sensors.
+			\item It takes left or right turn based on the difference of the two sensors.Also adjusts speed to take sharper turns.
+			\item Advantage:
+			\begin{itemize}
+				\item Works better than the one sensor approach.
+				\item Can take sharp turns
+				\item Faster.
+			\end{itemize}
+			\item Disadvantage:
+			\begin{itemize}
+				\item Uses more power.
+				\item Too much wear and tear of the motors. Harmful for it.
+			\end{itemize}
+		\end{itemize}
 	\end{frame}
 	\begin{frame}
 		\frametitle{3. Approach (two light sensors + PID)}
-		
+		\begin{itemize}
+			\item Same two sensor approach as the last one.
+			\item Calculates the difference between the two motors which works as error value for proportional controller.
+			\item Uses the previous error for better contol of movement. Integral approach.
+			\item Appropiate values of Proportional, Integral and Differencial co-efficients used.
+			\item Advantage:
+			\begin{itemize}
+				\item Less wear and tear of the motor. Works smoother.
+				\item Is able to follow the track better.
+			\end{itemize}
+			\item Disadvantage:
+			\begin{itemize}
+				\item Finding out appropiate co-efficient values.
+			\end{itemize}
+		\end{itemize} 
 	\end{frame}
 	\begin{frame}
 		\frametitle{4. Approach (two light, ultrasonic, touch sensor + PID)}
